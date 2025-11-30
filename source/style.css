@@ -1,0 +1,75 @@
+/* Estilos principales */
+:root{
+    --accent:#0b61ff;
+    --bg:#f4f7fb;
+    --card:#ffffff;
+    --muted:#6b7280;
+    --radius:8px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background:var(--bg);
+    color:#222;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.5;
+}
+
+/* Layout */
+.container{max-width:980px;margin:0 auto;padding:20px}
+
+/* Header */
+header{
+    background:linear-gradient(135deg,var(--accent) 0%, #0f172a 100%);
+    color:#fff;
+    padding:36px 20px;
+    text-align:center;
+    border-bottom-left-radius:16px;
+    border-bottom-right-radius:16px;
+}
+header h1{margin:0;font-size:1.6rem;letter-spacing:0.2px}
+.subtitle{margin:6px 0 14px;opacity:0.95}
+
+/* Botón */
+.btn-primary{
+    background:#fff;color:var(--accent);
+    border:0;padding:10px 14px;border-radius:10px;
+    cursor:pointer;font-weight:600;display:inline-flex;align-items:center;gap:8px;
+    box-shadow:0 4px 12px rgba(11,97,255,0.12);
+}
+.btn-primary i{font-size:1rem}
+.contact-info{margin-top:12px;background:rgba(255,255,255,0.06);padding:12px;border-radius:10px;font-size:0.95rem}
+.hidden{display:none}
+
+/* Cards */
+.card{background:var(--card);padding:18px;border-radius:var(--radius);margin-top:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+.card h2{margin:0 0 10px;font-size:1.05rem;display:flex;align-items:center;gap:8px}
+.card p{margin:0}
+
+/* Tabla */
+.table-responsive{overflow:auto}
+table{width:100%;border-collapse:collapse;background:transparent}
+th,td{padding:10px 12px;border-bottom:1px solid #eef2f7;text-align:left;font-size:0.95rem}
+th{color:var(--muted);font-weight:600;background:transparent}
+td a.linkedin-btn{display:inline-block;background:#0e76a8;color:#fff;padding:6px 8px;border-radius:6px;text-decoration:none;font-size:0.85rem;margin-right:6px}
+.no-link{color:#9aa3b2}
+
+/* Lista compañeros */
+.friend-list{list-style:none;padding:0;margin:0}
+.friend-list li{margin-bottom:8px}
+.friend-list a{text-decoration:none;color:var(--accent)}
+
+/* Footer */
+footer{text-align:center;padding:18px 10px;color:#94a3b8;font-size:0.9rem;margin-top:28px}
+
+/* Responsive */
+@media (max-width:600px){
+    header{padding:24px 12px}
+    .container{padding:12px}
+    th,td{padding:8px}
+    .btn-primary{padding:8px 10px}
+}
